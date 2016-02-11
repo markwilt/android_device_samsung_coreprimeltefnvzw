@@ -1,0 +1,2 @@
+# android_device_samsung_coreprimeltefnvzw
+Samsung Galaxy Core Prime
