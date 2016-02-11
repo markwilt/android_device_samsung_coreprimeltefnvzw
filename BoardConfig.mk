@@ -1,10 +1,11 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
-#-include vendor/samsung/msm8916/BoardConfigVendor.mk
+# -include vendor/samsung/msm8916/BoardConfigVendor.mk
+#
 
 # Inherit from common msm8916
--include device/samsung/msm8916-common/BoardConfigCommon.mk
+#-include device/samsung/msm8916-common/BoardConfigCommon.mk
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
@@ -23,10 +24,10 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 
 # fix this up by examining /proc/mtd on a running device
-BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00380000
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x00480000
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x08c60000
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x105c0000
+BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1320157184
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 5516558336
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 TARGET_PREBUILT_KERNEL := device/samsung/msm8916/kernel
